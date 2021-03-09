@@ -3,7 +3,6 @@ const getGifs = async () => {
     const { items } = await response.json()
 
     items.forEach(item => IMAGE_LINKS.push(item.mediaLink))
-    console.log(IMAGE_LINKS)
 
     displayGifs(IMAGE_LINKS)
 }
